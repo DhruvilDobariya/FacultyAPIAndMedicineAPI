@@ -1,6 +1,11 @@
 # MyFirstAngularProject
 
+This is my first angular project.
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.0.4.
+
+## Preview
+https://dhruvildobariya.github.io/FacultyAPIAndMedicineAPI/
 
 ## Development server
 
