@@ -1,0 +1,28 @@
+<div class="container-fluid mt-2">
+    <table class="table table-hover">
+        <thead class="thead text-light">
+          <tr>
+            <th scope="col">DrugsMasterID</th>
+            <th scope="col">DrugName</th>
+            <th scope="col">DrugLevel</th>
+            <th scope="col">ParentDrugID</th>
+            <th scope="col">Version</th>
+            <th scope="col" class="d-flex justify-content-center">View More</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let m of medicines">
+            <th scope="row">{{ m.DrugsMasterID }}</th>
+            <td>{{ m.DrugName }}</td>
+            <td>{{ m.DrugLevel }}</td>
+            <td>{{ m.ParentDrugID }}</td>
+            <td>{{ m.Version }}</td>
+            <td class="d-flex justify-content-center">
+                <button class="btn" (click)="view(m.DrugsMasterID)">
+                  <i class="fas fa-eye"></i>
+                </button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+</div>

@@ -1,0 +1,94 @@
+<div class="row p-2 title">
+    <h2 *ngIf="id == 0">Add Medicine</h2>
+    <h2 *ngIf="id != 0">Edit Medicine</h2>
+</div>
+<div class="container-fluid mt-4">
+    <form #Medicine="ngForm" (ngSubmit)="addEditMedicine()">
+        <div class="row">
+            <div class="col-md-2 mb-3">
+                <label for="" class="form-label">DrugsMasterID</label>
+            </div>
+            <div class="col-md-4 mb-3">
+                <input type="number" [(ngModel)]="medicine.DrugsMasterID" name="DrugsMasterID" id="" #DrugsMasterID="ngModel" class="form-control"  required>
+                <div class="error" *ngIf="DrugsMasterID.invalid && DrugsMasterID.touched">
+                    DrugsMasterID is Compulsory.
+                </div>
+            </div>
+            <div class="col-md-2 mb-3">
+                <label for="" class="form-label">DrugName</label>
+            </div>
+            <div class="col-md-4 mb-3">
+                <input type="text" [(ngModel)]="medicine.DrugName" name="DrugName" id="DrugName" #DrugName="ngModel" class="form-control" required>
+                <div class="error" *ngIf="DrugName.invalid && DrugName.touched">
+                    DrugName is Compulsory.
+                </div>
+            </div>
+            <div class="col-md-2 mb-3">
+                <label for="" class="form-label">PoisoningAccidental</label>
+            </div>
+            <div class="col-md-4">
+                <input type="text" [(ngModel)]="medicine.PoisoningAccidental" name="PoisoningAccidental" id="" class="form-control">
+            </div>
+            <div class="col-md-2 mb-3">
+                <label for="" class="form-label">PoisoningIntentional</label>
+            </div>
+            <div class="col-md-4 mb-3">
+                <input type="text" [(ngModel)]="medicine.PoisoningIntentional" name="PoisoningIntentional" id="" class="form-control">
+            </div>
+            <div class="col-md-2 mb-3">
+                <label for="" class="form-label">PoisoningAssault</label>
+            </div>
+            <div class="col-md-4 mb-3">
+                <input type="text" [(ngModel)]="medicine.PoisoningAssault" name="PoisoningAssault" id="" class="form-control">
+            </div>
+            <div class="col-md-2 mb-3">
+                <label for="" class="form-label">PoisoningUndetermined</label>
+            </div>
+            <div class="col-md-4 mb-3">
+                <input type="text" [(ngModel)]="medicine.PoisoningUndetermined" name="PoisoningUndetermined" id="" class="form-control">
+            </div>
+            <div class="col-md-2 mb-3">
+                <label for="" class="form-label">Adverseeffect</label>
+            </div>
+            <div class="col-md-4 mb-3">
+                <input type="text" [(ngModel)]="medicine.Adverseeffect" name="Adverseeffect" id="" class="form-control">
+            </div>
+            <div class="col-md-2 mb-3">
+                <label for="" class="form-label">Underdosing</label>
+            </div>
+            <div class="col-md-4 mb-3">
+                <input type="text" [(ngModel)]="medicine.Underdosing" name="Underdosing" id="" class="form-control">
+            </div>
+            <div class="col-md-2 mb-3">
+                <label for="" class="form-label">ParentDrugID</label>
+            </div>
+            <div class="col-md-4 mb-3">
+                <input type="number" [(ngModel)]="medicine.ParentDrugID" name="ParentDrugID" id="" class="form-control">
+            </div>
+            <div class="col-md-2 mb-3">
+                <label for="" class="form-label">DrugLevel</label>
+            </div>
+            <div class="col-md-4 mb-3">
+                <input type="number" [(ngModel)]="medicine.DrugLevel" name="DrugLevel" id="" class="form-control">
+            </div>
+            <div class="col-md-2 mb-3">
+                <label for="" class="form-label">Version</label>
+            </div>
+            <div class="col-md-4 mb-3">
+                <input type="text" [(ngModel)]="medicine.Version" name="Version" id="" class="form-control">
+            </div>
+        </div>
+        <div class="row mt-2">
+            <div class="col-md-6 d-flex justify-content-end" *ngIf="id == 0">
+                <button class="btn btn-success" [disabled]="Medicine.invalid">Add</button>
+            </div>
+            <div class="col-md-6 d-flex justify-content-end" *ngIf="id != 0">
+                <button class="btn btn-success" [disabled]="Medicine.invalid">Edit</button>
+            </div>
+            <div class="col-md-6">
+                <input type="reset" value="Reset" *ngIf="id == 0" class="btn btn-warning">
+                <button class="btn btn-danger" *ngIf="id != 0" (click)="back()">Back</button>
+            </div>
+        </div>
+    </form>
+</div>

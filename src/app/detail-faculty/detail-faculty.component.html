@@ -1,0 +1,89 @@
+<div class="bg">
+    <div class="row">
+        <div class="col-md-3 block m-5">
+            <div>
+                <img  class="img-fluid image" src="{{ faculty.FacultyImage }}" alt="...">
+            </div>
+            <div class="d-flex flex-column">
+                <div>
+                    <h5 class="d-flex justify-content-center mt-3">{{ faculty.FacultyName }}</h5>
+                </div>
+                <div>
+                    <h6 class="d-flex justify-content-center designation"> {{ faculty.FacultyDesignation }}</h6>
+                </div>
+                <hr class="hr">
+                <div>
+                    <p class="d-flex justify-content-center mt-1 mb-1 degree">{{ faculty.FacultyHighestEducation }}</p>
+                </div>
+                <hr class="hr">
+                <div class="row mt-2">
+                    <div class="col-md-6">
+                        <p class="d-flex justify-content-center detail">Experience</p>
+                        <span class="badge bg-primary d-flex justify-content-center expe">{{ faculty.FacultyExperienceInYears }}+ Year</span>
+                    </div>
+                    <div class="col-md-6">
+                        <p class="d-flex justify-content-center detail">Working Since</p>
+                        <span class="badge bg-primary d-flex justify-content-center work">{{ faculty.FacultyWorkingSince }}</span>
+                    </div>
+                </div>
+                <hr class="hr mt-3">
+                <div class="contect">
+                    <ul>
+                        <li class="">
+                            <span>
+                                <i class="fas fa-mobile-alt i">&nbsp;</i>
+                                (M): {{ faculty.FacultyMobileNumber }}
+                                <br>
+                                <i class="fas fa-phone-alt"></i>
+                                (O): {{ faculty.FacultyMobileNumber }}
+                            </span>
+                        </li>
+                        <li class="li">
+                            <span>
+                                <i class="fas fa-envelope"></i>
+                                {{ faculty.FacultyEmailAddress }}
+                            </span>
+                        </li>
+                        <li class="li">
+                            <span>
+                                <i class="fas fa-map-marker-alt"></i>
+                                {{ faculty.FacultySeating }}
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-9 mt-5 box">
+            <div class="row">
+                <div class="col-xl-6">
+                    <h4 class="profile mt-4">Profile</h4>
+                </div>
+                <div class="col-xl-6 d-flex justify-content-end align-items-center mt-3 delete">
+                    <i class="fas fa-user-edit btn" (click)="edit()"></i>
+                    <i class="fas fa-trash-alt btn" (click)="deleteFaculty()"></i>
+                </div>
+            </div>
+            <hr class="mt-0">
+            <p class="description">{{ faculty.FacultyProfileDescription }}.</p>
+            <div class="spac">
+                <div class="row">
+                    <div class="col-md-3 d-flex justify-content-end">
+                        <b class="spac-a">Area of Specialization</b>
+                    </div>
+                    <div class="col-md-9">
+                        <p class="description">{{ faculty.FacultyProfileDescription }}</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3 d-flex justify-content-end">
+                        <b class="spac-a">Subjects Taught</b>
+                    </div>
+                    <div class="col-md-9">
+                        <p class="description">{{ faculty.FacultySubjectsTaught }}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

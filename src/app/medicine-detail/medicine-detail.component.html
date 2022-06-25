@@ -1,0 +1,74 @@
+<div class="row p-2 title">
+    <div class="col-md-6">
+        <h2>{{ medicine.DrugName }}</h2>
+    </div>
+    <div class="col-md-6 d-flex justify-content-end">
+        <h2>#{{ medicine.DrugsMasterID }}</h2>
+    </div>
+</div>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-3 mt-4 pro">
+            <b>PoisoningAccidental</b>
+        </div>
+        <div class="col-md-3 mt-4 pro-a">
+            {{ medicine.PoisoningAccidental }}
+        </div>
+        <div class="col-md-3 mt-4 pro">
+            <b>PoisoningIntentional</b>
+        </div>
+        <div class="col-md-3 mt-4 pro-a">
+            {{ medicine.PoisoningIntentional }}
+        </div>
+        <div class="col-md-3 mt-4 pro">
+            <b>PoisoningAssault</b>
+        </div>
+        <div class="col-md-3 mt-4 pro-a">
+            {{ medicine.PoisoningAssault }}
+        </div>
+        <div class="col-md-3 mt-4 pro">
+            <b>PoisoningUndetermined</b>
+        </div>
+        <div class="col-md-3 mt-4 pro-a">
+            {{ medicine.PoisoningUndetermined }}
+        </div>
+        <div class="col-md-3 mt-4 pro">
+            <b>Adverseeffect</b>
+        </div>
+        <div class="col-md-3 mt-4 pro-a">
+            {{ medicine.Adverseeffect }}
+        </div>
+        <div class="col-md-3 mt-4 pro">
+            <b>Underdosing</b>
+        </div>
+        <div class="col-md-3 mt-4 pro-a">
+            {{ medicine.Underdosing }}
+        </div>
+        <div class="col-md-3 mt-4 pro">
+            <b>ParentDrugID</b>
+        </div>
+        <div class="col-md-3 mt-4 pro-a">
+            {{ medicine.ParentDrugID }}
+        </div>
+        <div class="col-md-3 mt-4 pro">
+            <b>DrugLevel</b>
+        </div>
+        <div class="col-md-3 mt-4 pro-a">
+            {{ medicine.DrugLevel }}
+        </div>
+        <div class="col-md-3 mt-4 pro">
+            <b>Version</b>
+        </div>
+        <div class="col-md-3 mt-4 pro-a">
+            {{ medicine.Version }}
+        </div>
+    </div>
+</div>
+<div class="row mt-4">
+    <div class="col-md-6 d-flex justify-content-end">
+        <button class="btn btn-success" (click)="edit()">Edit</button>
+    </div>
+    <div class="col-md-6">
+        <button class="btn btn-danger" (click)="delete()">Delete</button>
+    </div>
+</div>

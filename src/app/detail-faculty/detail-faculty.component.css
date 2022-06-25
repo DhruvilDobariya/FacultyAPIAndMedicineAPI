@@ -1,0 +1,86 @@
+.bg{
+    background-color: rgb(231, 231, 231);
+
+}
+.block{
+    padding: 0px;
+    border: none;
+    background-color: white;
+    width: 250px;
+    height: 580px;
+    border-radius: 5px;
+}
+.image{
+    width: 100%;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.hr{
+    margin: 0px 25px;
+}
+.designation{
+    color: rgb(105, 202, 17);
+}
+.degree{
+    color: gray;
+}
+.detail{
+    color: rgba(141, 138, 138, 0.699);
+    font-size: 11px;
+    margin-bottom: 4px;
+}
+.expe, .work{
+    margin: 0px 15px;
+    font-size: 14px;
+    padding: 7px;
+}
+.more{
+    color: rgba(141, 138, 138, 0.699);
+    font-size: 12.5px;
+}
+.more:hover{
+    cursor: pointer;
+}
+.box{
+    background-color: white;
+    padding: 0px 40px;
+}
+.profile{
+    font-family: "Roboto Slab", Helvetica, Arial, sans-serif;
+}
+.description{
+    color: gray;
+    text-align: justify;
+}
+.spac-a{
+    color: rgb(114, 111, 111);
+}
+.contect{
+    color: #555;
+    font-size: 14px;
+    padding: 10px;
+}
+.cont{
+    padding-left: 25px;
+}
+.i{
+    margin-right:2px
+}
+.delete{
+    padding-right: 7px;
+}
+.fa-trash-alt:hover{
+    color: red;
+    font-size: 20px;
+}
+.fa-user-edit:hover{
+    color: rgba(255, 238, 0, 0.89);
+    font-size: 20px;
+}
+ul{
+    list-style-type: none;
+    font-family: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+.li{
+    margin-top: 7px;
+}

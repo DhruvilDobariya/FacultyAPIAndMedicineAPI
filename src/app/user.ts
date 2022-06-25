@@ -1,0 +1,33 @@
+export class User {
+    UserID : number = 0;
+    UserName : string = "";
+    Password : string = "";
+    FirstName: string = "";
+    MiddleName : string = "";
+    LastName : string = "";
+    ProfilePicturePath : string = "";
+    Gender : string = "";
+    DOB : string = "";
+    Height : number = 0;
+    Weight : number = 0;
+    HeightestEducationQualification : string = "";
+    AboutUser : string = "";
+    Hobbies :string = "";
+    CurrentJobTitle : string = "";
+    CurrentSalary : number = 0;
+    TotalExperience : number = 0;
+    MobileNumber : string = "";
+    EmailAddress : string = "";
+    ResidentialAddress : string = "";
+    CityID : number = 0;
+    CasteID : number = 0;
+    IsWidow : string = "";
+    WidowDate : string = "";
+    IsDivorced : string = "";
+    DivorceDate : string = "";
+    IsHandiCapped : string = "";
+    HandiCappDetail : string = "";
+    Expectations : string = "";
+    Created : string = "";
+    Modified : string = "";
+}
